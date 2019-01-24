@@ -1,0 +1,14 @@
+
+<div  class="tarjeta" #tarjeta>
+  <i *ngIf="tarea.urgente" class="material-icons estrella">star</i>
+  <div (click)="escalar(tarjeta, titular, description)" class="box-tarea">
+      <h1 #titular>{{tarea.titulo | uppercase}}</h1>
+      <p #description>{{tarea.descripcion}}</p>
+  </div>
+  <div class="box-botones">
+      <button (click)="eliminarTask(tarea)" class="btn-floating btn-small waves-effect waves-light red lighten-3">X</button>
+  </div>
+</div>
+
+
+

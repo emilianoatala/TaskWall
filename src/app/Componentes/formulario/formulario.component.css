@@ -1,0 +1,24 @@
+textarea {
+  resize: none;
+  scrollbar-face-color: #6685CA;
+
+  scrollbar-highlight-color: #6685CA;
+
+  scrollbar-shadow-color: #6685CA;
+
+  scrollbar-3dlight-color:#FFFFFF;
+
+  scrollbar-arrow-color:#FFFFFF;
+
+  scrollbar-track-color:#E5E5E5;
+}
+.botonera{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+#urgente{
+  display: none
+}
+

@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let tarea of tareas"><post [tarea]="tarea"></post></li>
+  <li>
+    <div  class="tarjetaAñadir" id="card" #cardAdd>
+      <div class="box-añadir" *ngIf="servicioDeTareas.interruptor==false;">
+          <a (click)="servicioDeTareas.interruptor=true" class="btn-floating btn-large waves-effect waves-light indigo lighten-3"><i class="material-icons">add</i></a>
+          <h6>Añadir tarea</h6>
+      </div>
+      <div class="box" *ngIf="servicioDeTareas.interruptor">
+        <div  class="box-form">
+          <formulario  class="formulario"></formulario>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+

@@ -1,0 +1,14 @@
+<div class="box-lista" [hidden]="oculto" #navegador>
+    <ul class="lista">
+      <li (click)="oculto=true;menu(hamburguesa)" class="item-lista"><a [routerLink]="[ '/Home']">INICIO</a></li>
+      <li (click)="oculto=true;menu(hamburguesa)" class="item-lista"><a [routerLink]="[ '/About']">NOSOTROS</a></li>
+    </ul>
+</div>
+<div class="contenedor">
+  <div (click)="oculto=!oculto;menu(hamburguesa)" class="menu"><i #hamburguesa class="material-icons small">menu</i></div>
+  <div class="box-img">
+      <img src="../../../assets/logo.png" alt="logo">
+      <h1>TaskWall</h1>
+  </div>
+
+</div>

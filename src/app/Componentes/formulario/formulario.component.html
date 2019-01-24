@@ -1,0 +1,15 @@
+  <form >
+    <div class="form-group">
+      <input type="text" class="form-control" required id="exampleFormControlInput1"  maxlength="40" placeholder="Escriba un Titulo" #NuevoTitulo>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="exampleFormControlTextarea1" required  rows="3" maxlength="200" placeholder="Descripcion de la tarea" #NuevaDescripcion></textarea>
+    </div>
+    <div class="botonera">
+        <button (click)="addTarea(NuevoTitulo,NuevaDescripcion, casilla)" type="button" class="btn-floating btn-small waves-effect waves-light indigo lighten-3"><i class="material-icons">near_me</i></button>
+        <input type="checkbox"  (change)="urgencia(casilla, star)" id="urgente" #casilla>
+        <label for="urgente"><i class="material-icons estrella" #star>star</i></label>
+        <button id="cancelar" (click)="servicioDeTareas.interruptor=false" type="button" class="btn-floating btn-small waves-effect waves-light brown lighten-3"><i class="material-icons">block</i></button>
+    </div>
+  </form>
+
